@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".credits">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="248dp"
+        android:layout_height="165dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-3dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
