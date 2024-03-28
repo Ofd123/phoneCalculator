@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     String input;
     boolean plus1 = false, minus1 = false, multiply1 = false,  devide1 = false;
     boolean plus2 = false, minus2 = false, multiply2 = false, devide2 = false;
+    //----------------------------------------------------------------
     @Override
-
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btn5 =findViewById(R.id.btn5);
         btn6 =findViewById(R.id.btn6);
     }
-
-
+    //----------------------------------------------------------------
     public void problem(View view)
     {
         plus1 = plus2;
@@ -78,10 +77,6 @@ public class MainActivity extends AppCompatActivity {
             input = String.valueOf(number);
             edt.setHint(input);
             edt.setText("");
-//            plus1 = plus2;
-//            minus1 = minus2;
-//            multiply1 = multiply2;
-//            devide1 = devide2;
         }
     }
 
