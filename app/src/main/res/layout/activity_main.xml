@@ -25,7 +25,7 @@
         android:layout_height="54dp"
         android:layout_marginTop="52dp"
         android:text="/"
-        android:onClick="device"
+        android:onClick="devide"
         app:layout_constraintEnd_toEndOf="@+id/btn"
         app:layout_constraintStart_toStartOf="@+id/btn"
         app:layout_constraintTop_toBottomOf="@+id/btn" />
@@ -47,7 +47,8 @@
         android:id="@+id/btn3"
         android:layout_width="109dp"
         android:layout_height="54dp"
-        android:text="Button"
+        android:text="A/C"
+        android:onClick="reset"
         app:layout_constraintBottom_toBottomOf="@+id/btn5"
         app:layout_constraintEnd_toEndOf="@+id/btn4"
         app:layout_constraintTop_toTopOf="@+id/btn5"
@@ -58,6 +59,7 @@
         android:layout_width="64dp"
         android:layout_height="54dp"
         android:text="*"
+        android:onClick="multiply"
         app:layout_constraintBottom_toBottomOf="@+id/btn1"
         app:layout_constraintEnd_toEndOf="@+id/btn2"
         app:layout_constraintStart_toStartOf="@+id/btn2"
@@ -70,7 +72,6 @@
         android:ems="10"
         android:hint="0"
         android:inputType="number"
-        android:onClick="problem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -84,6 +85,7 @@
         android:layout_height="57dp"
         android:layout_marginTop="44dp"
         android:text="="
+        android:onClick="answer"
         app:layout_constraintStart_toStartOf="@+id/btn1"
         app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
@@ -91,7 +93,8 @@
         android:id="@+id/btn6"
         android:layout_width="121dp"
         android:layout_height="68dp"
-        android:text="Button"
+        android:text="credits"
+        android:onClick="credits"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
