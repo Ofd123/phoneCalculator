@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText edt;
-    Button btn, btn1, btn2, btn3, btn4, btn5, btn6;
     double inputNum = 0;
     double number = 0;
     String input;
@@ -24,13 +23,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         edt = findViewById(R.id.EDT);
-        btn = findViewById(R.id.btn);
-        btn1 =findViewById(R.id.btn1);
-        btn2 =findViewById(R.id.btn2);
-        btn3 =findViewById(R.id.btn3);
-        btn4 =findViewById(R.id.btn4);
-        btn5 =findViewById(R.id.btn5);
-        btn6 =findViewById(R.id.btn6);
     }
     //----------------------------------------------------------------
     public void problem(View view)
@@ -117,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         number = 0;
         input = "0";
         edt.setHint(input);
-        edt.setText("0");
+        edt.setText("");
     }
     //----------------------------------------------------------------
     public void credits(View view)
