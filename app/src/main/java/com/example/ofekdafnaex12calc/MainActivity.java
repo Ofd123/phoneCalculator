@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
     double inputNum = 0;
     double number = 0;
     String input;
-    boolean plus1 = false, minus1 = false, multiply1 = false,  devide1 = false;
-    boolean plus2 = false, minus2 = false, multiply2 = false, devide2 = false;
+    boolean plus1 = false, minus1 = false, multiply1 = false,  divide1 = false;
+    boolean plus2 = false, minus2 = false, multiply2 = false, divide2 = false;
     //----------------------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         plus1 = plus2;
         minus1 = minus2;
         multiply1 = multiply2;
-        devide1 = devide2;
+        divide1 = divide2;
         input = edt.getText().toString();
         if (!input.isEmpty())
         {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 number *= inputNum;
                 multiply2 = false;
             }
-            else if (devide1)
+            else if (divide1)
             {
                 if (inputNum == 0)
                 {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     number /= inputNum;
-                    devide2 = false;
+                    divide2 = false;
                 }
             }
             else
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
     public void devide(View view)
     {
         problem(view);
-        devide2 = true;
+        divide2 = true;
     }
     //----------------------------------------------------------------
     public void multiply(View view)
