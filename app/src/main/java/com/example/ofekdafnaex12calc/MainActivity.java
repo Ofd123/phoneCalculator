@@ -25,6 +25,33 @@ public class MainActivity extends AppCompatActivity {
         edt = findViewById(R.id.EDT);
     }
     //----------------------------------------------------------------
+    public boolean valid(String input)
+    {
+        if (input.isEmpty())
+        {
+            return false;
+        }
+        else if (input.length() == 1)
+        {
+            char firstChar = input.charAt(0);
+            if (firstChar == '.' || firstChar == '-')
+            {
+                return false;
+            }
+        }
+        else
+        {
+            char firstChar = input.charAt(0);
+            char lastChar = input.charAt(input.length() - 1);
+            if (lastChar == '.' || lastChar == '-' || firstChar == '.')
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //----------------------------------------------------------------
     public void problem(View view)
     {
         plus1 = plus2;
@@ -32,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         multiply1 = multiply2;
         divide1 = divide2;
         input = edt.getText().toString();
-        if (!input.isEmpty())
+        if (valid(input))
         {
             inputNum = Double.parseDouble(input);
             if (plus1)
